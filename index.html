@@ -1,36 +1,146 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Easy Pass - Secure Password Generator</title>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap">
-  <link rel="icon" type="image/png" href="favicon.png">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Easy Pass</title>
+    <link rel="stylesheet" href="./src/css/styles.css" />
+    <script src="./src/js/main.js"></script>
+    <link
+      rel="shortcut icon"
+      href="./src/img/favicon.png"
+      type="image/png"
+    />
+  </head>
+  <body>
+    <!-- Floating Responsive Navbar -->
+    <header class="navbar">
+      <div class="nav-container">
+        <div class="logo">Easy Pass</div>
+      
+      </div>
+    </header>
 
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="hero-content">
+        <h1>Click, Copy, Paste</h1>
+        <p>
+          Easy Pass creates ultra-secure passwords instantly. No more weak
+          passwords, no more breaches. Just unbreakable security made simple.
+        </p>
+        <div class="hero-buttons">
+          <a href="https://microsoftedge.microsoft.com/addons/detail/easy-pass/ejlegoigacddbijalecnhoemeognehin" class="btn white cta-primary"
+            ></i>Install Free Extension</a
+          >
+          <a href="#features" class="btn outline"
+            >See Features</a
+          >
+        </div>
+      </div>
+    </section>
 
-  <section class="hero">
-    
- 
+    <!-- Features Section -->
+    <section class="features" id="features">
+      <div class="features-content">
+        <h2>Powerful Features, Simple Experience</h2>
+        <p>Everything you need for bulletproof password security</p>
 
-    <h2>Generate Strong Passwords Instantly</h2>
-    <p>
-      Easy Pass is a free, privacy-focused password generator extension for your browser.
-      It works offline, keeps your data safe, and helps you stay protected online.
-    </p>
+        <div class="feature-grid">
+          <div class="feature-card">
+            <h3>Military-Grade Password Generation</h3>
+            <p>
+              Generate cryptographically secure passwords using true randomness.
+            </p>
+            <pre>
+> initializing password...
+> password hash loaded
+> entropy: 256-bit
+> result: secure <span class="cursor"></span>
+</pre>
+          </div>
 
-    <div class="btn-group">
-      <a class="btn" href="https://microsoftedge.microsoft.com/addons/detail/easy-pass/ejlegoigacddbijalecnhoemeognehin" target="_blank">Add to Edge <i class="fa-brands fa-edge"></i></a>
-      <a class="btn secondary" href="https://github.com/pawanhirumina/easy-pass/releases" target="_blank">Download for Other Browsers <i class="fa-solid fa-download"></i></a>
-    </div>
+          <div class="feature-card">
+            <h3>One-Click Generation</h3>
+            <p>
+              Right-click to generate a secure password instantly. No typing
+              required.
+            </p>
+          </div>
 
+          <div class="feature-card">
+            <h3>Custom Rules</h3>
+            <p>
+              Set length, include/exclude symbols, and more to match site
+              requirements.
+            </p>
+          </div>
 
-  </section>
+          <div class="feature-card">
+            <h3>100% Local</h3>
+            <p>
+              Passwords are generated in your browser. They never leave your
+              device.
+            </p>
+          </div>
 
+          <div class="feature-card wide">
+            <h3>Privacy First Architecture</h3>
 
+            <p>
+              Runs entirely offline. No internet access, no data storage, no
+              tracking.
+            </p>
+            <ul>
+              <li><i class="ph-fill ph-wifi-x"></i> No Internet Access</li>
+              <li><i class="ph-fill ph-database"></i> No Data Storage</li>
+              <li><i class="ph-fill ph-target"></i> No Tracking</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
 
-</body>
+    <!-- CTA -->
+    <section class="cta">
+      <div class="cta-content">
+        <h2>Get Easy Pass Now</h2>
+        <p>
+          Install the extension and start generating secure passwords instantly
+        </p>
+        <div class="hero-buttons">
+          <a href="https://microsoftedge.microsoft.com/addons/detail/easy-pass/ejlegoigacddbijalecnhoemeognehin" class="btn white"
+            ><i class="ph-fill ph-microsoft-edge-logo"></i> Edge Add-ons</a
+          >
+          <a href="https://github.com/pawanhirumina/easy-pass/releases" class="btn outline"
+            ><i class="ph-fill ph-browser"></i> Other Browsers (GitHub)</a
+          >
+        </div>
+        <p class="note">
+          ✓ Free forever &nbsp; ✓ No registration required &nbsp; ✓ Works
+          offline
+        </p>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="footer-content">
+
+        </div>
+      </div>
+      <p class="copyright">
+        © 2025 Easy Pass. Built for security, designed for simplicity.
+      </p>
+    </footer>
+
+    <!-- Toggle Navbar JS -->
+    <script>
+      const toggleBtn = document.getElementById("navToggle");
+      const navMenu = document.getElementById("navMenu");
+      toggleBtn.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
+      });
+    </script>
+  </body>
 </html>
