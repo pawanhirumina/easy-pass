@@ -1,7 +1,9 @@
+// Open side navigation
+function openNav() {
+  document.getElementById("sideNav").style.width = "100%";
+}
 
-
-const cursor = document.getElementById('cursor'); 
-
-setInterval(() => {
-  cursor.style.visibility = cursor.style.visibility === "hidden" ? "visible" : "hidden";
-}, 500)
+// Close side navigation
+function closeNav() {
+  document.getElementById("sideNav").style.width = "0%";
+}

@@ -27,6 +27,7 @@ body {
   flex-direction: column;
   z-index: 10000;
   overflow: hidden;
+  transition: 0.6s ease;
 }
 .side-nav-content {
   text-align: center;

@@ -11,19 +11,50 @@
       href="./src/img/favicon.png"
       type="image/png"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/phosphor-icons@1.4.2/src/css/icons.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
   </head>
   <body>
+    <!-- Background Blurs -->
+    <div class="top-blur">
+    </div>
+    <div class="bottom-blur">
+    </div>
+
+<!-- Responsive Side Navigation -->
+    <div class="side-nav" id="sideNav" >
+      <div class="side-nav-content">
+        <div class="side-nav-closebtn" onclick="closeNav()">
+          <button class="side-nav-closebtn-btn ph-fill ph-x" id="close-btn">
+          </button>
+        </div>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#download">Download</a></li>
+        </ul>
+      </div>
+    
+    </div>
     <!-- Floating Responsive Navbar -->
     <header class="navbar">
       <div class="nav-container">
-        <div class="logo">Easy Pass</div>
-      
+        <div> <!-- Logo -->
+          <div class="logo">Easy Pass</div>
+        </div>
+
+        <ul> <!-- Navbar -->
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#download" class="cta-primary">Download</a></li>
+        </ul>
+      <i class="ph-fill ph-list" onclick="openNav()"></i> <!-- Hamburger Menu -->
       </div>
     </header>
 
     <!-- Hero Section -->
-    <section class="hero">
-      <div class="hero-content">
+    <section class="hero" id="home">
+      <div class="hero-content"> <!-- Hero Section -->
         <h1>Click, Copy, Paste</h1>
         <p>
           Easy Pass creates ultra-secure passwords instantly. No more weak
@@ -42,12 +73,12 @@
 
     <!-- Features Section -->
     <section class="features" id="features">
-      <div class="features-content">
+      <div class="features-content"> <!-- Features Section -->
         <h2>Powerful Features, Simple Experience</h2>
         <p>Everything you need for bulletproof password security</p>
 
         <div class="feature-grid">
-          <div class="feature-card">
+          <div class="feature-card"> <!-- Feature Card -->
             <h3>Military-Grade Password Generation</h3>
             <p>
               Generate cryptographically secure passwords using true randomness.
@@ -60,7 +91,7 @@
 </pre>
           </div>
 
-          <div class="feature-card">
+          <div class="feature-card"> <!-- Feature Card -->
             <h3>One-Click Generation</h3>
             <p>
               Right-click to generate a secure password instantly. No typing
@@ -68,7 +99,7 @@
             </p>
           </div>
 
-          <div class="feature-card">
+          <div class="feature-card"> <!-- Feature Card -->
             <h3>Custom Rules</h3>
             <p>
               Set length, include/exclude symbols, and more to match site
@@ -76,7 +107,7 @@
             </p>
           </div>
 
-          <div class="feature-card">
+          <div class="feature-card"> <!-- Feature Card -->
             <h3>100% Local</h3>
             <p>
               Passwords are generated in your browser. They never leave your
@@ -84,7 +115,7 @@
             </p>
           </div>
 
-          <div class="feature-card wide">
+          <div class="feature-card wide"> <!-- Feature Card -->
             <h3>Privacy First Architecture</h3>
 
             <p>
@@ -102,17 +133,17 @@
     </section>
 
     <!-- CTA -->
-    <section class="cta">
-      <div class="cta-content">
+    <section class="cta" id="download">
+      <div class="cta-content"> <!-- CTA Section -->
         <h2>Get Easy Pass Now</h2>
         <p>
           Install the extension and start generating secure passwords instantly
         </p>
         <div class="hero-buttons">
-          <a href="https://microsoftedge.microsoft.com/addons/detail/easy-pass/ejlegoigacddbijalecnhoemeognehin" class="btn white"
+          <a class="cta-primary" href="https://microsoftedge.microsoft.com/addons/detail/easy-pass/ejlegoigacddbijalecnhoemeognehin" class="btn white"
             ><i class="ph-fill ph-microsoft-edge-logo"></i> Edge Add-ons</a
           >
-          <a href="https://github.com/pawanhirumina/easy-pass/releases" class="btn outline"
+          <a class="cta-secondary" href="https://github.com/pawanhirumina/easy-pass/releases" class="btn outline"
             ><i class="ph-fill ph-browser"></i> Other Browsers (GitHub)</a
           >
         </div>
@@ -125,11 +156,11 @@
 
     <!-- Footer -->
     <footer>
-      <div class="footer-content">
+      <div class="footer-content"> <!-- Footer Section -->    
 
         </div>
       </div>
-      <p class="copyright">
+      <p class="copyright"> <!-- Copyright -->
         © 2025 Easy Pass. Built for security, designed for simplicity.
       </p>
     </footer>

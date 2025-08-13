@@ -8,21 +8,26 @@
   width: 4px;
   background-color: rgba(83, 83, 83, 0.9);
 }
+
 ::-webkit-scrollbar-track {
   background-color: transparent;
 }
+
 ::-webkit-scrollbar-button {
   background-color: transparent;
 }
+
 ::-webkit-scrollbar-thumb {
   background-color: rgba(20, 20, 20, 0.9);
 }
+
 .cta-primary {
-  background-color: var(--clr-bg) !important;
+  background-color: var(--clr-accent) !important;
   color: var(--clr-text) !important;
   padding: 5px 16px;
   border-radius: 16px;
 }
+
 .cta-secondary {
   background-color: var(--clr-bg) !important;
   color: var(--clr-text) !important;
@@ -34,10 +39,12 @@ a {
   color: inherit;
   text-decoration: none;
 }
+
 p {
   font-size: calc(1rem - 1px) !important;
   color: rgb(209, 209, 209);
 }
+
 .btn {
   padding: 0.6rem 1.2rem;
   border-radius: 6px;
@@ -54,6 +61,7 @@ p {
   padding: 5px 16px;
   border-radius: 16px;
 }
+
 .btn.white:hover {
   opacity: 0.95;
   scale: 0.95;
@@ -66,7 +74,28 @@ p {
   background: transparent;
   color: white;
 }
+
 .btn.outline:hover {
   opacity: 0.95;
   scale: 0.95;
+}
+
+.top-blur {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  backdrop-filter: blur(1px);
+}
+
+.bottom-blur {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0));
+  backdrop-filter: blur(1px);
 }

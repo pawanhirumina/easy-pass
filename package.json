@@ -1,0 +1,25 @@
+{
+  "name": "easy_pass",
+  "version": "1.0.0",
+  "description": "![Demo Image](./src/img/demo.png)",
+  "main": "index.js",
+"scripts": {
+  "dev": "vite",
+  "build": "vite build",
+  "preview": "vite preview"
+},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pawanhirumina/easy-pass.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/pawanhirumina/easy-pass/issues"
+  },
+  "homepage": "https://github.com/pawanhirumina/easy-pass#readme",
+  "devDependencies": {
+    "vite": "^7.1.2"
+  }
+}
